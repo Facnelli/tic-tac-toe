@@ -1,0 +1,19 @@
+﻿{
+  "name": "TicTacToeRoguelike.Presentation",
+  "rootNamespace": "TicTacToeRoguelike.Presentation",
+  "references": [
+    "TicTacToeRoguelike.Domain",
+    "TicTacToeRoguelike.Application",
+    "Unity.TextMeshPro",
+    "Unity.ugui"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

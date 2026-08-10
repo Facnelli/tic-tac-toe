@@ -1,0 +1,21 @@
+﻿{
+  "name": "TicTacToeRoguelike.PlayModeTests",
+  "rootNamespace": "TicTacToeRoguelike.PlayModeTests",
+  "references": [
+    "TicTacToeRoguelike.Domain",
+    "TicTacToeRoguelike.Application",
+    "TicTacToeRoguelike.Presentation"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

@@ -1,0 +1,16 @@
+﻿{
+  "name": "TicTacToeRoguelike.Application",
+  "rootNamespace": "TicTacToeRoguelike.Application",
+  "references": [
+    "TicTacToeRoguelike.Domain"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": true
+}
