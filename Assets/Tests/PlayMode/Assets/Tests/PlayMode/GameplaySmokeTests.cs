@@ -3,6 +3,8 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
+using TicTacToeRoguelike.Presentation.Board;
+using TicTacToeRoguelike.Presentation.Encounters;
 
 namespace TicTacToeRoguelike.PlayModeTests
 {
