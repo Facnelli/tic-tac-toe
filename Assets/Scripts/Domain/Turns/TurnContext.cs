@@ -335,22 +335,24 @@ namespace TicTacToeRoguelike.Domain.Turns
         }
 
         /*
+         * Integração deste Marco:
+         *
+         * TurnCompletion.CreateFrom cria uma fotografia imutável depois que
+         * este contexto alcança Completed, Skipped ou Cancelled.
+         *
          * Adições futuras:
          *
-         * 1. TurnCompletion criará uma fotografia imutável deste contexto,
-         *    contendo ator, identidade, ações executadas, versões e motivo.
-         *
-         * 2. ActionExecutor chamará RegisterAppliedAction somente depois de
+         * 1. ActionExecutor chamará RegisterAppliedAction somente depois de
          *    receber um ActionResult aplicado com sucesso.
          *
-         * 3. Efeitos de runa poderão alterar ActionBudget ao criar o próximo
+         * 2. Efeitos de runa poderão alterar ActionBudget ao criar o próximo
          *    TurnContext. O orçamento não deve ser alterado no meio do Turno.
          *
-         * 4. Turnos extras deverão criar outro TurnContext e outro TurnId.
+         * 3. Turnos extras deverão criar outro TurnContext e outro TurnId.
          *    Aumentar o orçamento deste objeto significaria ações extras no mesmo
          *    Turno, que possui comportamento diferente para a reação.
          *
-         * 5. O próximo participante não será armazenado aqui. Essa escolha será
+         * 4. O próximo participante não será armazenado aqui. Essa escolha será
          *    realizada pelo futuro EncounterEngine.
          */
     }
