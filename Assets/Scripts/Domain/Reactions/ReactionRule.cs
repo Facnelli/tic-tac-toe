@@ -4,7 +4,7 @@ using TicTacToeRoguelike.Domain.Scoring;
 namespace TicTacToeRoguelike.Domain.Reactions
 {
     /// <summary>
-    /// Decide o resultado da fase de reação ao final de uma rodada de ações.
+    /// Decide o resultado da fase de reação ao final de uma turno de ações.
     ///
     /// Esta classe é uma regra de domínio pura:
     ///
@@ -15,32 +15,29 @@ namespace TicTacToeRoguelike.Domain.Reactions
     /// - não aplica multiplicadores de vitória.
     ///
     /// Antes de chamar Evaluate, o controlador deverá aplicar todas as ações da
-    /// rodada, recontar as sequências existentes no tabuleiro e criar o novo
+    /// turno, recontar as sequências existentes no tabuleiro e criar o novo
     /// ReactionState. A regra compara essa fotografia com a anterior e devolve
     /// uma ReactionDecision autoritativa.
     ///
-    /// IMPORTANTE SOBRE A PALAVRA "RODADA"
-    ///
-    /// Aqui, rodada de ações é a oportunidade completa de um participante. Uma
-    /// runa poderá permitir duas ações dentro dessa mesma rodada; nesse caso,
+    /// Uma runa poderá permitir duas ações dentro desse mesmo turno; nesse caso,
     /// Evaluate deve ser chamado somente depois da segunda ação. Se uma runa
-    /// conceder duas rodadas consecutivas, Evaluate deverá ser chamado ao final
+    /// conceder dois turnos consecutivos, Evaluate deverá ser chamado ao final
     /// de cada uma delas.
     /// </summary>
     public sealed class ReactionRule
     {
         /// <summary>
-        /// Avalia a transição ocorrida ao final de uma rodada de ações.
+        /// Avalia a transição ocorrida ao final de um turno.
         /// </summary>
         /// <param name="previousState">
-        /// Estado de reação válido antes do início da rodada que terminou.
+        /// Estado de reação válido antes do início da turno que terminou.
         /// </param>
         /// <param name="currentState">
         /// Nova recontagem completa, produzida depois que todas as ações dessa
-        /// rodada modificaram o tabuleiro.
+        /// turno modificaram o tabuleiro.
         /// </param>
         /// <param name="completedRoundActor">
-        /// Participante que realmente concluiu a rodada de ações.
+        /// Participante que realmente concluiu a turno de ações.
         ///
         /// Um turno pulado não deve chamar este método. Pular o turno do
         /// participante que precisa reagir apenas adia sua oportunidade; não
@@ -92,7 +89,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
             }
 
             /*
-             * Se antes da rodada não havia líder, estávamos no estado normal.
+             * Se antes da turno não havia líder, estávamos no estado normal.
              * A nova recontagem pode apenas:
              *
              * 1. continuar empatada; ou
@@ -112,7 +109,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
             }
 
             /*
-             * A partir daqui já existia uma reação pendente antes da rodada.
+             * A partir daqui já existia uma reação pendente antes da turno.
              * Empatar sempre resolve a reação e devolve a partida ao fluxo
              * normal, independentemente de quem causou a alteração. Esse cuidado
              * é útil para futuros efeitos que também possam remover sequências do
@@ -138,10 +135,10 @@ namespace TicTacToeRoguelike.Domain.Reactions
              * terminou ainda atrás. A partida no tabuleiro acaba imediatamente,
              * mesmo que ainda existam casas ou outras ações comuns disponíveis.
              *
-             * Duas ações na MESMA rodada não chegam aqui entre uma ação e outra,
-             * porque Evaluate só deve ser chamado quando a rodada inteira acabar.
-             * Já uma segunda rodada consecutiva não salva o reagente: a primeira
-             * rodada é avaliada e a derrota já foi decidida.
+             * Duas ações na MESMA turno não chegam aqui entre uma ação e outra,
+             * porque Evaluate só deve ser chamado quando a turno inteira acabar.
+             * Já uma segunda turno consecutiva não salva o reagente: a primeira
+             * turno é avaliada e a derrota já foi decidida.
              */
             if (responderCompletedRound &&
                 previousLeaderRemainedAhead)
@@ -161,7 +158,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
              *
              * O caso comum é o participante que estava reagindo virar o placar.
              * A condição também permanece correta para futuros efeitos capazes de
-             * mudar os dois lados do tabuleiro durante a rodada do líder.
+             * mudar os dois lados do tabuleiro durante a turno do líder.
              */
             if (!previousLeaderRemainedAhead)
             {
@@ -175,7 +172,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
             /*
              * O mesmo líder continuou à frente, mas quem acabou de jogar não era
              * o participante obrigado a reagir. Isso representa principalmente
-             * uma rodada extra do líder ou um turno adversário pulado.
+             * uma turno extra do líder ou um turno adversário pulado.
              *
              * A vantagem pode aumentar, diminuir ou permanecer igual. Enquanto o
              * líder não mudar, o direito de reação do adversário continua intacto.
@@ -209,7 +206,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
         }
 
         /// <summary>
-        /// Centraliza a criação das decisões que permitem outra rodada.
+        /// Centraliza a criação das decisões que permitem outra turno.
         /// Todas elas usam EndReason.None e exigem ações disponíveis.
         /// </summary>
         private static ReactionDecision CreateContinuingDecision(
@@ -251,7 +248,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
                 throw new ArgumentOutOfRangeException(
                     nameof(completedRoundActor),
                     completedRoundActor,
-                    "A regra de reação aceita somente uma rodada concluída " +
+                    "A regra de reação aceita somente um turno concluído " +
                     "por Player ou Enemy.");
             }
 
@@ -273,7 +270,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
          *    modificar a disputa.
          *
          * 2. Se uma runa conceder mais de uma OPORTUNIDADE DE REAÇÃO, e não apenas
-         *    mais ações dentro da mesma rodada, ReactionState poderá guardar o
+         *    mais ações dentro do mesmo turno, ReactionState poderá guardar o
          *    orçamento restante. A regra deverá consumi-lo antes de declarar
          *    ResponderRemainedBehind.
          *

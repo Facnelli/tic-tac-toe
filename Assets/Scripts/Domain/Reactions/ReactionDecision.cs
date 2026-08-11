@@ -5,18 +5,18 @@ namespace TicTacToeRoguelike.Domain.Reactions
 {
     /// <summary>
     /// Resultado lógico produzido pela futura ReactionRule ao final de uma
-    /// rodada de ações.
+    /// turno de ações.
     ///
-    /// É importante diferenciar uma ação de uma rodada de ações:
+    /// É importante diferenciar uma ação de uma turno de ações:
     ///
     /// - uma ação é um lance comum ou o uso de uma runa;
-    /// - uma rodada de ações pode conter uma ou mais ações do mesmo participante;
+    /// - uma turno de ações pode conter uma ou mais ações do mesmo participante;
     /// - a ReactionRule somente decide falha ou sucesso da reação quando essa
-    ///   rodada de ações realmente termina.
+    ///   turno de ações realmente termina.
     ///
     /// Por isso, duas ações concedidas pela mesma runa não produzem duas decisões
-    /// separadas. Já duas rodadas consecutivas produzem uma decisão ao final de
-    /// cada rodada, mesmo quando continuam pertencendo ao mesmo participante.
+    /// separadas. Já duas turnos consecutivas produzem uma decisão ao final de
+    /// cada turno, mesmo quando continuam pertencendo ao mesmo participante.
     /// </summary>
     public enum ReactionDecisionKind
     {
@@ -28,14 +28,14 @@ namespace TicTacToeRoguelike.Domain.Reactions
 
         /// <summary>
         /// O placar deixou de estar empatado. O participante que ficou atrás
-        /// passa a possuir o direito e o dever de reagir na sua próxima rodada.
+        /// passa a possuir o direito e o dever de reagir na sua próxima turno.
         /// </summary>
         ReactionStarted,
 
         /// <summary>
         /// A mesma liderança e a mesma reação pendente foram preservadas.
         ///
-        /// O caso mais importante é uma rodada extra do líder: ele pode ampliar
+        /// O caso mais importante é uma turno extra do líder: ele pode ampliar
         /// a vantagem, mas isso não conta como tentativa fracassada de quem ainda
         /// não recebeu sua oportunidade de reação.
         /// </summary>
@@ -56,7 +56,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
         /// <summary>
         /// A partida/tabuleiro terminou com um participante à frente.
         ///
-        /// Isso pode ocorrer porque o responsável pela reação terminou sua rodada
+        /// Isso pode ocorrer porque o responsável pela reação terminou sua turno
         /// ainda atrás ou porque não existem ações disponíveis para continuar.
         /// O ReactionEndReason informa qual dessas situações aconteceu.
         /// </summary>
@@ -83,7 +83,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
         None,
 
         /// <summary>
-        /// O participante que precisava reagir concluiu sua rodada de ações e
+        /// O participante que precisava reagir concluiu sua turno de ações e
         /// permaneceu atrás no placar de sequências.
         /// </summary>
         ResponderRemainedBehind,
@@ -125,23 +125,23 @@ namespace TicTacToeRoguelike.Domain.Reactions
         public ReactionEndReason EndReason { get; }
 
         /// <summary>
-        /// Placar de reação válido antes da rodada de ações avaliada.
+        /// Placar de reação válido antes da turno de ações avaliada.
         /// </summary>
         public ReactionState PreviousState { get; }
 
         /// <summary>
         /// Placar obtido pela recontagem completa depois que todas as ações da
-        /// rodada foram aplicadas ao tabuleiro.
+        /// turno foram aplicadas ao tabuleiro.
         /// </summary>
         public ReactionState CurrentState { get; }
 
         /// <summary>
-        /// Participante que acabou de concluir a rodada de ações avaliada.
+        /// Participante que acabou de concluir a turno de ações avaliada.
         ///
         /// Esta informação é indispensável para não confundir:
         ///
         /// - o responsável pela reação que recebeu sua oportunidade e falhou;
-        /// - o líder que ganhou uma rodada extra e apenas manteve a vantagem;
+        /// - o líder que ganhou uma turno extra e apenas manteve a vantagem;
         /// - um turno pulado, que não deve ser registrado como tentativa.
         /// </summary>
         public ScoreActor CompletedRoundActor { get; }
@@ -165,7 +165,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
         public ScoreActor Winner { get; }
 
         /// <summary>
-        /// Indica que a partida/tabuleiro deve continuar recebendo rodadas.
+        /// Indica que a partida/tabuleiro deve continuar recebendo turnos.
         /// </summary>
         public bool ShouldContinue => !EndsBoardMatch;
 
@@ -298,7 +298,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
                 throw new ArgumentOutOfRangeException(
                     nameof(completedRoundActor),
                     completedRoundActor,
-                    "Uma rodada de ações deve ter sido concluída por Player " +
+                    "Uma turno de ações deve ter sido concluída por Player " +
                     "ou Enemy.");
             }
         }
@@ -373,7 +373,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
                     {
                         throw new ArgumentException(
                             "O participante responsável pela reação não pode " +
-                            "apenas mantê-la: se ele concluiu sua rodada ainda " +
+                            "apenas mantê-la: se ele concluiu sua turno ainda " +
                             "atrás, a reação fracassou e a decisão deve ser " +
                             "Victory.",
                             nameof(completedRoundActor));
@@ -455,7 +455,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
                     {
                         throw new ArgumentException(
                             "Uma reação somente falha quando o participante que " +
-                            "precisava reagir conclui sua própria rodada.",
+                            "precisava reagir conclui sua própria turno.",
                             nameof(completedRoundActor));
                     }
 
@@ -521,7 +521,7 @@ namespace TicTacToeRoguelike.Domain.Reactions
          *    diretamente por uma runa. Esses motivos deverão continuar sendo
          *    fatos produzidos pelo domínio, nunca pela interface.
          *
-         * 2. Quando existirem replays, um identificador da rodada de ações poderá
+         * 2. Quando existirem replays, um identificador da turno de ações poderá
          *    ser adicionado ao relatório. A BoardVersion já protege a recontagem
          *    do tabuleiro, mas o identificador permitirá relacionar a decisão aos
          *    comandos e efeitos que a originaram.

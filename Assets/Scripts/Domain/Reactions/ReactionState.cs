@@ -17,8 +17,8 @@ namespace TicTacToeRoguelike.Domain.Reactions
     /// - a casa é preenchida novamente: 1 x 0.
     ///
     /// A classe não decide se uma partida terminou. Essa responsabilidade ficará
-    /// na futura ReactionRule, que também conhecerá quem concluiu a rodada de
-    /// ações e se ainda existem ações capazes de alterar o tabuleiro.
+    /// na ReactionRule, que também conhecerá quem concluiu o turno
+    /// e se ainda existem ações capazes de alterar o tabuleiro.
     /// </summary>
     public sealed class ReactionState
     {
@@ -68,8 +68,8 @@ namespace TicTacToeRoguelike.Domain.Reactions
         /// Indica que existe um participante atrás no placar e com direito ou
         /// dever de reação.
         ///
-        /// A existência de uma vantagem não garante que ainda haverá outra
-        /// rodada. A futura ReactionRule poderá encerrar imediatamente a partida
+        /// A existência de uma vantagem não garante que ainda haverá outro
+        /// Turno. A futura ReactionRule poderá encerrar imediatamente a partida
         /// quando nenhuma ação estiver disponível.
         /// </summary>
         public bool IsReactionActive => PendingResponder != ScoreActor.None;
