@@ -5,104 +5,70 @@ namespace TicTacToeRoguelike.Domain.Actions
     /// <summary>
     /// Explica por que uma GameAction não foi aplicada.
     ///
-    /// O motivo é representado por enum, em vez de uma mensagem textual, para
-    /// permitir que:
-    ///
-    /// - testes verifiquem a regra exata;
-    /// - a interface escolha uma mensagem traduzida;
-    /// - a IA reconheça decisões desatualizadas;
-    /// - logs e replays armazenem um valor estável;
-    /// - diferentes tipos de ação usem o mesmo relatório.
-    ///
-    /// Uma rejeição representa uma situação prevista durante o jogo.
-    /// Inconsistências internas de programação devem lançar exceções.
+    /// Rejeições representam situações previstas durante o jogo.
+    /// Inconsistências de programação continuam sendo representadas por exceções.
     /// </summary>
     public enum ActionRejectionReason
     {
         /// <summary>
         /// Nenhuma regra rejeitou a ação.
         ///
-        /// Este valor aparece somente em ActionResult aplicado.
+        /// Este valor aparece somente em resultados aplicados.
         /// </summary>
         None = 0,
 
         /// <summary>
         /// O encontro está em uma fase que não aceita ações.
-        ///
-        /// Por exemplo: apresentação de pontuação, resolução de dano,
-        /// encerramento da rodada ou escolha de recompensa.
         /// </summary>
         EncounterDoesNotAcceptActions = 1,
 
         /// <summary>
         /// Não existe um Turno aberto capaz de receber a ação.
-        ///
-        /// Isso cobre um TurnContext ausente, concluído, pulado ou cancelado.
         /// </summary>
         TurnIsNotOpen = 2,
 
         /// <summary>
-        /// A ação foi criada para um Turno diferente do Turno atual.
-        ///
-        /// Mesmo que os dois Turnos pertençam ao mesmo ator, eles representam
-        /// oportunidades diferentes e possuem TurnId distintos.
+        /// A ação foi criada para outro Turno.
         /// </summary>
         TurnIdDoesNotMatch = 3,
 
         /// <summary>
-        /// O ator da ação não é o participante que possui o Turno atual.
+        /// O ator da ação não possui o Turno atual.
         /// </summary>
         ActorDoesNotOwnTurn = 4,
 
         /// <summary>
         /// O tabuleiro mudou depois que a intenção foi criada.
-        ///
-        /// A ação deve ser descartada e, se necessário, calculada novamente
-        /// usando o estado atual.
         /// </summary>
         BoardVersionDoesNotMatch = 5,
 
         /// <summary>
-        /// O executor ainda não reconhece a categoria da ação recebida.
+        /// O executor não reconhece a categoria da ação.
         /// </summary>
         ActionTypeNotSupported = 6,
 
         /// <summary>
         /// A marca solicitada não pertence ao ator da ação.
-        ///
-        /// PlaceMarkAction garante apenas que a marca é X ou O. A relação entre
-        /// participante e marca depende da configuração do encontro e será
-        /// validada pelo ActionExecutor.
         /// </summary>
         MarkDoesNotBelongToActor = 7,
 
         /// <summary>
-        /// A coordenada informada não corresponde a uma casa existente.
-        ///
-        /// Esse motivo corresponde a MoveRejectionReason.CellDoesNotExist.
+        /// A coordenada não corresponde a uma casa existente.
         /// </summary>
         CellDoesNotExist = 8,
 
         /// <summary>
         /// A casa já contém a marca solicitada.
-        ///
-        /// Esse motivo corresponde a MoveRejectionReason.MarkAlreadyPresent.
         /// </summary>
         MarkAlreadyPresent = 9,
 
         /// <summary>
-        /// A casa está ocupada e não permite sobreposição.
-        ///
-        /// Esse motivo corresponde a
-        /// MoveRejectionReason.OccupiedCellDoesNotAllowOverlap.
+        /// A casa ocupada não permite sobreposição.
         /// </summary>
         OccupiedCellDoesNotAllowOverlap = 10,
 
         /// <summary>
-        /// A ação existe, mas deixou de estar disponível no estado atual.
-        ///
-        /// Este motivo poderá ser usado por futuras ações de runa quando seus
-        /// requisitos deixarem de ser atendidos antes da execução.
+        /// A ação deixou de estar disponível no estado atual.
         /// </summary>
         ActionNotAvailable = 11
     }
@@ -110,79 +76,59 @@ namespace TicTacToeRoguelike.Domain.Actions
     /// <summary>
     /// Relatório imutável da tentativa de executar uma GameAction.
     ///
-    /// GameAction representa uma intenção. ActionResult registra o que realmente
-    /// aconteceu quando essa intenção foi entregue ao futuro ActionExecutor.
+    /// O resultado informa:
     ///
-    /// Um resultado possui exatamente uma das situações:
+    /// - qual intenção foi processada;
+    /// - se ela foi aplicada ou rejeitada;
+    /// - qual regra causou a rejeição;
+    /// - as versões do tabuleiro antes e depois;
+    /// - quais casas realmente mudaram.
     ///
-    /// - aplicado: RejectionReason é None;
-    /// - rejeitado: RejectionReason possui um motivo específico.
-    ///
-    /// Uma ação rejeitada conserva a mesma versão antes e depois. Assim, ela não
-    /// pode esconder uma alteração parcial no tabuleiro.
-    ///
-    /// Esta classe não modifica BoardState, não consome o TurnContext, não escolhe
-    /// o próximo participante e não avalia reação.
+    /// Esta classe não altera BoardState, não consome TurnContext e não decide
+    /// qual participante jogará em seguida.
     /// </summary>
     public sealed class ActionResult
     {
         /// <summary>
         /// Intenção que produziu este resultado.
-        ///
-        /// GameAction é imutável, portanto pode ser armazenada com segurança no
-        /// relatório.
         /// </summary>
         public GameAction Action { get; }
 
-        /// <summary>
-        /// Informa que a ação foi aceita e aplicada pelo serviço autorizado.
-        ///
-        /// Uma ação aplicada poderá ou não alterar o tabuleiro. Futuras ações
-        /// poderão modificar pontuação, runas ou outro estado sem aumentar a
-        /// BoardState.Version.
-        /// </summary>
         public bool WasApplied =>
             RejectionReason == ActionRejectionReason.None;
 
-        /// <summary>
-        /// Informa que a ação não foi aplicada.
-        ///
-        /// Resultados rejeitados não devem consumir o orçamento do TurnContext.
-        /// </summary>
         public bool WasRejected =>
             !WasApplied;
 
         /// <summary>
         /// Motivo da rejeição.
         ///
-        /// Quando WasApplied for true, este valor será None.
+        /// Será None quando a ação tiver sido aplicada.
         /// </summary>
         public ActionRejectionReason RejectionReason { get; }
 
         /// <summary>
-        /// Versão real do tabuleiro imediatamente antes da tentativa.
-        ///
-        /// Ela não é necessariamente igual a Action.ExpectedBoardVersion. Quando
-        /// for diferente, a ação estará desatualizada e deverá ser rejeitada.
+        /// Versão real imediatamente antes da tentativa.
         /// </summary>
         public long BoardVersionBefore { get; }
 
         /// <summary>
-        /// Versão real do tabuleiro depois da tentativa.
+        /// Versão real depois da tentativa.
         ///
-        /// Em uma rejeição, este número será obrigatoriamente igual a
-        /// BoardVersionBefore.
-        ///
-        /// Em uma ação aplicada, ele pode ser maior ou permanecer igual, mas nunca
-        /// pode ser menor.
+        /// Em uma rejeição, será igual a BoardVersionBefore.
         /// </summary>
         public long BoardVersionAfter { get; }
 
         /// <summary>
-        /// Informa se a versão do tabuleiro mudou durante a execução.
+        /// Casas alteradas pela ação.
         ///
-        /// WasApplied pode ser true enquanto DidChangeBoard é false, pois uma ação
-        /// futura poderá modificar outro estado do encontro.
+        /// Resultados rejeitados sempre utilizam BoardChangeSet.Empty.
+        /// Ações aplicadas que não alterem o tabuleiro também podem usar Empty.
+        /// </summary>
+        public BoardChangeSet BoardChanges { get; }
+
+        /// <summary>
+        /// Informa se o BoardState sofreu alguma alteração.
         /// </summary>
         public bool DidChangeBoard =>
             BoardVersionAfter > BoardVersionBefore;
@@ -191,38 +137,30 @@ namespace TicTacToeRoguelike.Domain.Actions
             GameAction action,
             ActionRejectionReason rejectionReason,
             long boardVersionBefore,
-            long boardVersionAfter)
+            long boardVersionAfter,
+            BoardChangeSet boardChanges)
         {
             Action = action;
             RejectionReason = rejectionReason;
             BoardVersionBefore = boardVersionBefore;
             BoardVersionAfter = boardVersionAfter;
+            BoardChanges = boardChanges;
         }
 
         /// <summary>
         /// Cria o relatório de uma ação aplicada.
         ///
-        /// A versão esperada pela ação precisa ser igual à versão observada antes
-        /// da execução. Se forem diferentes, o executor deve produzir um resultado
-        /// rejeitado com BoardVersionDoesNotMatch.
+        /// A versão esperada pela ação precisa corresponder à versão real anterior.
         ///
-        /// boardVersionAfter pode ser igual a boardVersionBefore. Isso permite
-        /// representar ações que alteram pontuação, runas ou outro estado sem
-        /// modificar o tabuleiro.
+        /// Quando a versão aumentar, BoardChanges precisa conter ao menos uma
+        /// alteração. Quando a versão permanecer igual, o conjunto precisa estar
+        /// vazio.
         /// </summary>
-        /// <param name="action">
-        /// Ação que foi aplicada.
-        /// </param>
-        /// <param name="boardVersionBefore">
-        /// Versão real antes da aplicação.
-        /// </param>
-        /// <param name="boardVersionAfter">
-        /// Versão real depois da aplicação.
-        /// </param>
         public static ActionResult Applied(
             GameAction action,
             long boardVersionBefore,
-            long boardVersionAfter)
+            long boardVersionAfter,
+            BoardChangeSet boardChanges)
         {
             ValidateAction(action);
 
@@ -234,11 +172,14 @@ namespace TicTacToeRoguelike.Domain.Actions
                 boardVersionAfter,
                 nameof(boardVersionAfter));
 
+            if (boardChanges == null)
+            {
+                throw new ArgumentNullException(nameof(boardChanges));
+            }
+
             /*
-             * Uma ação só pode ser aplicada sobre o estado para o qual foi criada.
-             *
-             * Esta proteção torna impossível construir acidentalmente um resultado
-             * de sucesso para uma intenção desatualizada.
+             * Uma intenção somente pode ser aplicada sobre a versão para a qual
+             * foi criada.
              */
             if (action.ExpectedBoardVersion != boardVersionBefore)
             {
@@ -250,47 +191,32 @@ namespace TicTacToeRoguelike.Domain.Actions
                     nameof(boardVersionBefore));
             }
 
-            /*
-             * A versão nunca pode voltar no tempo.
-             *
-             * Igualdade é permitida porque nem toda ação futura modificará o
-             * BoardState.
-             */
             if (boardVersionAfter < boardVersionBefore)
             {
                 throw new ArgumentOutOfRangeException(
                     nameof(boardVersionAfter),
                     boardVersionAfter,
-                    "A versão posterior não pode ser menor que a versão anterior.");
+                    "A versão posterior não pode ser menor que a anterior.");
             }
+
+            ValidateBoardChanges(
+                boardVersionBefore,
+                boardVersionAfter,
+                boardChanges);
 
             return new ActionResult(
                 action,
                 ActionRejectionReason.None,
                 boardVersionBefore,
-                boardVersionAfter);
+                boardVersionAfter,
+                boardChanges);
         }
 
         /// <summary>
         /// Cria o relatório de uma ação rejeitada.
         ///
-        /// Uma única versão é recebida porque uma rejeição não pode modificar o
-        /// tabuleiro. O mesmo valor será armazenado como versão anterior e
-        /// posterior.
-        ///
-        /// A versão pode ser diferente de Action.ExpectedBoardVersion. Essa
-        /// diferença é justamente o que ocorrerá em uma rejeição causada por
-        /// BoardVersionDoesNotMatch.
+        /// Uma rejeição não altera versão e não produz BoardChange.
         /// </summary>
-        /// <param name="action">
-        /// Ação que foi rejeitada.
-        /// </param>
-        /// <param name="reason">
-        /// Regra que impediu sua aplicação.
-        /// </param>
-        /// <param name="boardVersion">
-        /// Versão real que permaneceu inalterada.
-        /// </param>
         public static ActionResult Rejected(
             GameAction action,
             ActionRejectionReason reason,
@@ -303,18 +229,12 @@ namespace TicTacToeRoguelike.Domain.Actions
                 boardVersion,
                 nameof(boardVersion));
 
-            /*
-             * A versão é usada duas vezes intencionalmente.
-             *
-             * Dessa forma, o próprio construtor público da rejeição impede que um
-             * chamador registre uma alteração parcial como se nada tivesse sido
-             * aplicado.
-             */
             return new ActionResult(
                 action,
                 reason,
                 boardVersion,
-                boardVersion);
+                boardVersion,
+                BoardChangeSet.Empty);
         }
 
         private static void ValidateAction(
@@ -329,10 +249,6 @@ namespace TicTacToeRoguelike.Domain.Actions
         private static void ValidateRejectionReason(
             ActionRejectionReason reason)
         {
-            /*
-             * None significa sucesso e, portanto, não pode criar um resultado
-             * rejeitado.
-             */
             if (reason == ActionRejectionReason.None)
             {
                 throw new ArgumentException(
@@ -340,10 +256,6 @@ namespace TicTacToeRoguelike.Domain.Actions
                     nameof(reason));
             }
 
-            /*
-             * Enums aceitam conversões numéricas. Esta verificação impede valores
-             * que não foram declarados em ActionRejectionReason.
-             */
             if (!Enum.IsDefined(
                     typeof(ActionRejectionReason),
                     reason))
@@ -368,35 +280,60 @@ namespace TicTacToeRoguelike.Domain.Actions
             }
         }
 
+        private static void ValidateBoardChanges(
+            long boardVersionBefore,
+            long boardVersionAfter,
+            BoardChangeSet boardChanges)
+        {
+            bool versionChanged =
+                boardVersionAfter > boardVersionBefore;
+
+            /*
+             * Se a versão aumentou, alguma casa precisa ter mudado.
+             *
+             * Isso impede que o relatório diga que o tabuleiro mudou sem
+             * informar à apresentação quais casas devem ser atualizadas.
+             */
+            if (versionChanged && boardChanges.IsEmpty)
+            {
+                throw new ArgumentException(
+                    "Uma alteração de versão precisa possuir ao menos um " +
+                    "BoardChange.",
+                    nameof(boardChanges));
+            }
+
+            /*
+             * Se a versão não mudou, não pode existir uma alteração de casa.
+             *
+             * Ações futuras que modificarem somente pontuação, inventário ou
+             * Turnos serão aplicadas com a mesma versão e BoardChangeSet.Empty.
+             */
+            if (!versionChanged && !boardChanges.IsEmpty)
+            {
+                throw new ArgumentException(
+                    "BoardChangeSet precisa estar vazio quando a versão do " +
+                    "tabuleiro não mudou.",
+                    nameof(boardChanges));
+            }
+        }
+
         /*
          * Integrações futuras:
          *
-         * 1. Na sessão 4.3, ActionResult receberá um BoardChangeSet imutável.
-         *    Resultados rejeitados utilizarão BoardChangeSet.Empty.
+         * 1. BoardMutationService produzirá BoardChangeSet para alterações
+         *    compostas.
          *
-         * 2. ActionExecutor criará Rejected quando fase, Turno, ator ou versão não
-         *    corresponderem ao estado atual.
+         * 2. ActionExecutor converterá o resultado de MoveService em
+         *    ActionResult.
          *
-         * 3. As rejeições do MoveService serão convertidas explicitamente:
-         *
-         *    CellDoesNotExist
-         *        -> ActionRejectionReason.CellDoesNotExist
-         *
-         *    MarkAlreadyPresent
-         *        -> ActionRejectionReason.MarkAlreadyPresent
-         *
-         *    OccupiedCellDoesNotAllowOverlap
-         *        -> ActionRejectionReason.OccupiedCellDoesNotAllowOverlap
-         *
-         * 4. Somente um ActionResult com WasApplied igual a true poderá chamar
+         * 3. Somente ActionResult.WasApplied poderá chamar
          *    TurnContext.RegisterAppliedAction.
          *
-         * 5. Mensagens para o jogador não devem ser armazenadas neste objeto.
-         *    A apresentação poderá traduzir RejectionReason para o texto adequado.
+         * 4. A apresentação poderá percorrer BoardChanges sem recalcular as
+         *    regras que produziram as alterações.
          *
-         * 6. Erros inesperados de programação não deverão ser convertidos em
-         *    rejeições genéricas. Eles precisam continuar visíveis por exceções e
-         *    logs para que a inconsistência seja corrigida.
+         * 5. Mensagens traduzidas para o jogador continuarão pertencendo à
+         *    camada de apresentação.
          */
     }
 }
