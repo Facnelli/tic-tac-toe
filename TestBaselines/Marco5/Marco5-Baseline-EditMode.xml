@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="194" result="Passed" total="194" passed="194" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:41Z" duration="0,7841839">
+  <test-suite type="TestSuite" id="1000" name="Tic tac toe" fullname="Tic tac toe" runstate="Runnable" testcasecount="194" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:41Z" duration="0.784184" total="194" passed="194" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1221" name="TicTacToeRoguelike.EditModeTests.dll" fullname="C:/Users/fachi/Tic tac toe/Library/ScriptAssemblies/TicTacToeRoguelike.EditModeTests.dll" runstate="Runnable" testcasecount="194" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:41Z" duration="0.765317" total="194" passed="194" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="22612" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1222" name="TicTacToeRoguelike" fullname="TicTacToeRoguelike" runstate="Runnable" testcasecount="194" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:41Z" duration="0.764373" total="194" passed="194" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1223" name="Domain" fullname="TicTacToeRoguelike.Domain" runstate="Runnable" testcasecount="57" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.401478" total="57" passed="57" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1224" name="EditModeTests" fullname="TicTacToeRoguelike.Domain.EditModeTests" runstate="Runnable" testcasecount="57" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.400903" total="57" passed="57" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestSuite" id="1227" name="Boards" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards" runstate="Runnable" testcasecount="25" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.192809" total="25" passed="25" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="TestFixture" id="1039" name="BoardDefinitionTests" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.130436" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1049" name="BoardDirection_NormalizesOppositeDirections" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests.BoardDirection_NormalizesOppositeDirections" methodname="BoardDirection_NormalizesOppositeDirections" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" runstate="Runnable" seed="1001987854" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.038796" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1050" name="BoardDirection_WithoutMovement_ThrowsArgumentException" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests.BoardDirection_WithoutMovement_ThrowsArgumentException" methodname="BoardDirection_WithoutMovement_ThrowsArgumentException" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" runstate="Runnable" seed="1830201126" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.006826" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1043" name="Constructor_SortsCoordinates" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests.Constructor_SortsCoordinates" methodname="Constructor_SortsCoordinates" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" runstate="Runnable" seed="135051385" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.013587" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1044" name="Constructor_WithRepeatedCell_ThrowsArgumentException" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests.Constructor_WithRepeatedCell_ThrowsArgumentException" methodname="Constructor_WithRepeatedCell_ThrowsArgumentException" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" runstate="Runnable" seed="2090687773" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002185" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1040" name="CreateRectangular_CreatesAllCellsInDeterministicOrder" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests.CreateRectangular_CreatesAllCellsInDeterministicOrder" methodname="CreateRectangular_CreatesAllCellsInDeterministicOrder" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" runstate="Runnable" seed="2141834088" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.005396" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1048" name="CreateRectangular_WithInvalidDimension_Throws" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests.CreateRectangular_WithInvalidDimension_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.009053" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1045" name="CreateRectangular_WithInvalidDimension_Throws(0,3)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests.CreateRectangular_WithInvalidDimension_Throws(0,3)" methodname="CreateRectangular_WithInvalidDimension_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" runstate="Runnable" seed="757655681" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001423" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1046" name="CreateRectangular_WithInvalidDimension_Throws(3,0)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests.CreateRectangular_WithInvalidDimension_Throws(3,0)" methodname="CreateRectangular_WithInvalidDimension_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" runstate="Runnable" seed="2039071741" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.000269" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1047" name="CreateRectangular_WithInvalidDimension_Throws(-1,3)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests.CreateRectangular_WithInvalidDimension_Throws(-1,3)" methodname="CreateRectangular_WithInvalidDimension_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" runstate="Runnable" seed="327851650" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.000495" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1041" name="CreateWithBlockedCells_RemovesOnlyBlockedCoordinates" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests.CreateWithBlockedCells_RemovesOnlyBlockedCoordinates" methodname="CreateWithBlockedCells_RemovesOnlyBlockedCoordinates" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" runstate="Runnable" seed="79825629" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.003092" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1042" name="TryGetNextCell_WhenNextPositionIsBlocked_ReturnsFalse" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests.TryGetNextCell_WhenNextPositionIsBlocked_ReturnsFalse" methodname="TryGetNextCell_WhenNextPositionIsBlocked_ReturnsFalse" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardDefinitionTests" runstate="Runnable" seed="2146729694" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001118" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1051" name="BoardStateTests" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.032147" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1056" name="AppliedMove_ChangesOnlyTargetCellAndIncrementsVersion" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests.AppliedMove_ChangesOnlyTargetCellAndIncrementsVersion" methodname="AppliedMove_ChangesOnlyTargetCellAndIncrementsVersion" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests" runstate="Runnable" seed="1866874940" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.009668" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1057" name="Clone_CanChangeWithoutChangingOriginalBoard" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests.Clone_CanChangeWithoutChangingOriginalBoard" methodname="Clone_CanChangeWithoutChangingOriginalBoard" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests" runstate="Runnable" seed="1593129405" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002718" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1052" name="Constructor_CreatesOneEmptyCellPerDefinitionCell" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests.Constructor_CreatesOneEmptyCellPerDefinitionCell" methodname="Constructor_CreatesOneEmptyCellPerDefinitionCell" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests" runstate="Runnable" seed="667251333" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002072" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1053" name="Constructor_PreservesInitialStateWithoutCountingAChange" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests.Constructor_PreservesInitialStateWithoutCountingAChange" methodname="Constructor_PreservesInitialStateWithoutCountingAChange" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests" runstate="Runnable" seed="496619269" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.006566" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1055" name="Constructor_WithInitialCellOutsideDefinition_Throws" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests.Constructor_WithInitialCellOutsideDefinition_Throws" methodname="Constructor_WithInitialCellOutsideDefinition_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests" runstate="Runnable" seed="1991077851" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001568" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1054" name="SpecialBoard_DoesNotCreateCellAtBlockedCoordinate" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests.SpecialBoard_DoesNotCreateCellAtBlockedCoordinate" methodname="SpecialBoard_DoesNotCreateCellAtBlockedCoordinate" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.BoardStateTests" runstate="Runnable" seed="134111811" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002689" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1058" name="CellStateTests" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.026928" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1061" name="Constructor_WithBothMarks_RecognizesEachMark" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests.Constructor_WithBothMarks_RecognizesEachMark" methodname="Constructor_WithBothMarks_RecognizesEachMark" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests" runstate="Runnable" seed="624571966" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001479" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1062" name="Constructor_WithGoldenModifier_StoresModifierSeparately" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests.Constructor_WithGoldenModifier_StoresModifierSeparately" methodname="Constructor_WithGoldenModifier_StoresModifierSeparately" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests" runstate="Runnable" seed="493524046" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001290" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1059" name="Constructor_WithoutInitialData_CreatesEmptyCell" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests.Constructor_WithoutInitialData_CreatesEmptyCell" methodname="Constructor_WithoutInitialData_CreatesEmptyCell" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests" runstate="Runnable" seed="1076804181" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.004793" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1063" name="Constructor_WithRepeatedModifier_ThrowsArgumentException" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests.Constructor_WithRepeatedModifier_ThrowsArgumentException" methodname="Constructor_WithRepeatedModifier_ThrowsArgumentException" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests" runstate="Runnable" seed="874729502" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001715" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1060" name="Constructor_WithSingleMark_StoresMark" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests.Constructor_WithSingleMark_StoresMark" methodname="Constructor_WithSingleMark_StoresMark" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests" runstate="Runnable" seed="2137596740" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.000996" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1064" name="Constructor_WithUnknownMark_ThrowsArgumentException" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests.Constructor_WithUnknownMark_ThrowsArgumentException" methodname="Constructor_WithUnknownMark_ThrowsArgumentException" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests" runstate="Runnable" seed="950731287" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001268" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1067" name="HasMark_WithAnythingOtherThanOneMark_Throws" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests.HasMark_WithAnythingOtherThanOneMark_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.006563" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1065" name="HasMark_WithAnythingOtherThanOneMark_Throws(None)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests.HasMark_WithAnythingOtherThanOneMark_Throws(None)" methodname="HasMark_WithAnythingOtherThanOneMark_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests" runstate="Runnable" seed="1797047774" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001608" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1066" name="HasMark_WithAnythingOtherThanOneMark_Throws(X, O)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests.HasMark_WithAnythingOtherThanOneMark_Throws(X, O)" methodname="HasMark_WithAnythingOtherThanOneMark_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests" runstate="Runnable" seed="298183867" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.000378" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1068" name="Modifiers_CannotBeChangedThroughPublicCollection" fullname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests.Modifiers_CannotBeChangedThroughPublicCollection" methodname="Modifiers_CannotBeChangedThroughPublicCollection" classname="TicTacToeRoguelike.Domain.EditModeTests.Boards.CellStateTests" runstate="Runnable" seed="1268885227" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001403" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestSuite" id="1226" name="Moves" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.121538" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="TestFixture" id="1021" name="MoveServiceTests" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.020680" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1027" name="Constructor_WithNullValidator_Throws" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests.Constructor_WithNullValidator_Throws" methodname="Constructor_WithNullValidator_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests" runstate="Runnable" seed="333798558" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.006086" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1026" name="CoordinateOverload_AndIntegerOverload_ProduceSameResult" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests.CoordinateOverload_AndIntegerOverload_ProduceSameResult" methodname="CoordinateOverload_AndIntegerOverload_ProduceSameResult" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests" runstate="Runnable" seed="1190746797" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001511" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1024" name="TryApplyNormalMove_OnGoldenCell_AddsSecondMark" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests.TryApplyNormalMove_OnGoldenCell_AddsSecondMark" methodname="TryApplyNormalMove_OnGoldenCell_AddsSecondMark" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests" runstate="Runnable" seed="1018528918" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001652" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1022" name="TryApplyNormalMove_WhenAllowed_AddsMarkAndIncrementsVersion" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests.TryApplyNormalMove_WhenAllowed_AddsMarkAndIncrementsVersion" methodname="TryApplyNormalMove_WhenAllowed_AddsMarkAndIncrementsVersion" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests" runstate="Runnable" seed="1817591" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001532" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1023" name="TryApplyNormalMove_WhenRejected_DoesNotChangeCellOrVersion" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests.TryApplyNormalMove_WhenRejected_DoesNotChangeCellOrVersion" methodname="TryApplyNormalMove_WhenRejected_DoesNotChangeCellOrVersion" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests" runstate="Runnable" seed="1073445877" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002316" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1025" name="TryApplyNormalMove_WhenSameMarkIsRepeated_DoesNotIncrementVersion" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests.TryApplyNormalMove_WhenSameMarkIsRepeated_DoesNotIncrementVersion" methodname="TryApplyNormalMove_WhenSameMarkIsRepeated_DoesNotIncrementVersion" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveServiceTests" runstate="Runnable" seed="500204419" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001337" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="1028" name="MoveValidatorTests" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.093732" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1038" name="GetLegalNormalMoves_ReturnsOnlyCoordinatesAllowedForMark" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests.GetLegalNormalMoves_ReturnsOnlyCoordinatesAllowedForMark" methodname="GetLegalNormalMoves_ReturnsOnlyCoordinatesAllowedForMark" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests" runstate="Runnable" seed="1590173193" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.004486" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1029" name="ValidateNormalMove_OnEmptyCell_IsAllowedAndDoesNotChangeBoard" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests.ValidateNormalMove_OnEmptyCell_IsAllowedAndDoesNotChangeBoard" methodname="ValidateNormalMove_OnEmptyCell_IsAllowedAndDoesNotChangeBoard" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests" runstate="Runnable" seed="463318917" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.007553" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1033" name="ValidateNormalMove_OnMissingCell_RejectsMove" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests.ValidateNormalMove_OnMissingCell_RejectsMove" methodname="ValidateNormalMove_OnMissingCell_RejectsMove" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests" runstate="Runnable" seed="2044844010" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.007557" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1030" name="ValidateNormalMove_OnOccupiedCommonCell_RejectsOverlap" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests.ValidateNormalMove_OnOccupiedCommonCell_RejectsOverlap" methodname="ValidateNormalMove_OnOccupiedCommonCell_RejectsOverlap" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests" runstate="Runnable" seed="120776818" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.008024" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1031" name="ValidateNormalMove_OnOccupiedGoldenCell_AllowsOtherMark" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests.ValidateNormalMove_OnOccupiedGoldenCell_AllowsOtherMark" methodname="ValidateNormalMove_OnOccupiedGoldenCell_AllowsOtherMark" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests" runstate="Runnable" seed="100146354" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002677" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1032" name="ValidateNormalMove_WhenMarkAlreadyExists_RejectsEvenGoldenCell" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests.ValidateNormalMove_WhenMarkAlreadyExists_RejectsEvenGoldenCell" methodname="ValidateNormalMove_WhenMarkAlreadyExists_RejectsEvenGoldenCell" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests" runstate="Runnable" seed="2027616572" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.010004" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1036" name="ValidateNormalMove_WithInvalidMoveMark_Throws" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests.ValidateNormalMove_WithInvalidMoveMark_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.012179" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1034" name="ValidateNormalMove_WithInvalidMoveMark_Throws(None)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests.ValidateNormalMove_WithInvalidMoveMark_Throws(None)" methodname="ValidateNormalMove_WithInvalidMoveMark_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests" runstate="Runnable" seed="2053763573" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.003996" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1035" name="ValidateNormalMove_WithInvalidMoveMark_Throws(X, O)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests.ValidateNormalMove_WithInvalidMoveMark_Throws(X, O)" methodname="ValidateNormalMove_WithInvalidMoveMark_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests" runstate="Runnable" seed="1020926609" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001996" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1037" name="ValidateNormalMove_WithNullBoard_Throws" fullname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests.ValidateNormalMove_WithNullBoard_Throws" methodname="ValidateNormalMove_WithNullBoard_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Moves.MoveValidatorTests" runstate="Runnable" seed="517117445" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001942" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestSuite" id="1225" name="Sequences" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.084199" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="TestFixture" id="1001" name="SequenceEvaluatorTests" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.080617" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1007" name="EvaluateScoringSequences_LineOfFourProducesAllWindows" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateScoringSequences_LineOfFourProducesAllWindows" methodname="EvaluateScoringSequences_LineOfFourProducesAllWindows" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="135397802" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.012958" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1010" name="EvaluateSequences_BlockedCellInterruptsLine" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateSequences_BlockedCellInterruptsLine" methodname="EvaluateSequences_BlockedCellInterruptsLine" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="1454067612" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002245" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1011" name="EvaluateSequences_CellWithBothMarksParticipatesForBothPlayers" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateSequences_CellWithBothMarksParticipatesForBothPlayers" methodname="EvaluateSequences_CellWithBothMarksParticipatesForBothPlayers" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="411589169" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002443" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1009" name="EvaluateSequences_DifferentMarkInterruptsLine" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateSequences_DifferentMarkInterruptsLine" methodname="EvaluateSequences_DifferentMarkInterruptsLine" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="921737278" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001740" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1014" name="EvaluateSequences_UsesOnlyDirectionsAllowedByDefinition" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateSequences_UsesOnlyDirectionsAllowedByDefinition" methodname="EvaluateSequences_UsesOnlyDirectionsAllowedByDefinition" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="689564485" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002424" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1018" name="EvaluateSequences_WithInvalidMark_Throws" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateSequences_WithInvalidMark_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.008205" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1016" name="EvaluateSequences_WithInvalidMark_Throws(None)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateSequences_WithInvalidMark_Throws(None)" methodname="EvaluateSequences_WithInvalidMark_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="1118795435" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001798" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1017" name="EvaluateSequences_WithInvalidMark_Throws(X, O)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateSequences_WithInvalidMark_Throws(X, O)" methodname="EvaluateSequences_WithInvalidMark_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="1507865798" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001671" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1020" name="EvaluateSequences_WithMaximumBelowMinimum_Throws" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateSequences_WithMaximumBelowMinimum_Throws" methodname="EvaluateSequences_WithMaximumBelowMinimum_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="1418582592" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001379" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1019" name="EvaluateSequences_WithMinimumBelowTwo_Throws" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateSequences_WithMinimumBelowTwo_Throws" methodname="EvaluateSequences_WithMinimumBelowTwo_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="455745084" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001701" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1015" name="EvaluateSequences_WithNullBoard_Throws" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateSequences_WithNullBoard_Throws" methodname="EvaluateSequences_WithNullBoard_Throws" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="1899107636" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001750" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-suite type="ParameterizedMethod" id="1006" name="EvaluateWinningSequences_FindsSequenceInEachDirection" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateWinningSequences_FindsSequenceInEachDirection" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.013732" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                  <properties />
+                  <test-case id="1002" name="EvaluateWinningSequences_FindsSequenceInEachDirection(Horizontal)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateWinningSequences_FindsSequenceInEachDirection(Horizontal)" methodname="EvaluateWinningSequences_FindsSequenceInEachDirection" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="1042520626" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.003076" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1003" name="EvaluateWinningSequences_FindsSequenceInEachDirection(Vertical)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateWinningSequences_FindsSequenceInEachDirection(Vertical)" methodname="EvaluateWinningSequences_FindsSequenceInEachDirection" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="1747228751" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001077" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1004" name="EvaluateWinningSequences_FindsSequenceInEachDirection(MainDiagonal)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateWinningSequences_FindsSequenceInEachDirection(MainDiagonal)" methodname="EvaluateWinningSequences_FindsSequenceInEachDirection" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="2117837105" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001465" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                  <test-case id="1005" name="EvaluateWinningSequences_FindsSequenceInEachDirection(SecondaryDiagonal)" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateWinningSequences_FindsSequenceInEachDirection(SecondaryDiagonal)" methodname="EvaluateWinningSequences_FindsSequenceInEachDirection" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="769811147" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001526" asserts="0">
+                    <properties>
+                      <property name="retryIteration" value="0" />
+                      <property name="repeatIteration" value="0" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+                <test-case id="1008" name="EvaluateWinningSequences_LineOfFourContainsTwoWinningTrios" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.EvaluateWinningSequences_LineOfFourContainsTwoWinningTrios" methodname="EvaluateWinningSequences_LineOfFourContainsTwoWinningTrios" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="1117521053" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001399" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1013" name="Evaluation_DoesNotChangeBoardVersion" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.Evaluation_DoesNotChangeBoardVersion" methodname="Evaluation_DoesNotChangeBoardVersion" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="1939033569" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001849" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1012" name="SequenceMatch_ExposesCoordinatesAndContainment" fullname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests.SequenceMatch_ExposesCoordinatesAndContainment" methodname="SequenceMatch_ExposesCoordinatesAndContainment" classname="TicTacToeRoguelike.Domain.EditModeTests.Sequences.SequenceEvaluatorTests" runstate="Runnable" seed="903600623" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.003721" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+        <test-suite type="TestSuite" id="1228" name="EditModeTests" fullname="TicTacToeRoguelike.EditModeTests" runstate="Runnable" testcasecount="137" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:41Z" duration="0.361917" total="137" passed="137" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1232" name="Actions" fullname="TicTacToeRoguelike.EditModeTests.Actions" runstate="Runnable" testcasecount="39" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:41Z" duration="0.169843" total="39" passed="39" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1169" name="ActionAvailabilityServiceTests" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.064659" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1173" name="Constructor_NullMoveValidator_ThrowsArgumentNullException" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Constructor_NullMoveValidator_ThrowsArgumentNullException" methodname="Constructor_NullMoveValidator_ThrowsArgumentNullException" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="1018074235" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002459" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1174" name="Constructor_NullProviderCollection_ThrowsArgumentNullException" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Constructor_NullProviderCollection_ThrowsArgumentNullException" methodname="Constructor_NullProviderCollection_ThrowsArgumentNullException" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="1752632259" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001361" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1175" name="Constructor_NullProviderItem_ThrowsArgumentException" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Constructor_NullProviderItem_ThrowsArgumentException" methodname="Constructor_NullProviderItem_ThrowsArgumentException" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="1263296887" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001890" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1186" name="Evaluate_DoesNotChangeBoardVersion" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_DoesNotChangeBoardVersion" methodname="Evaluate_DoesNotChangeBoardVersion" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="2126413054" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.003505" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1176" name="Evaluate_EmptyBoard_ReturnsEveryLegalNormalMove" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_EmptyBoard_ReturnsEveryLegalNormalMove" methodname="Evaluate_EmptyBoard_ReturnsEveryLegalNormalMove" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="1843134461" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001704" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1172" name="Evaluate_EnvironmentActor_ThrowsArgumentOutOfRangeException" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_EnvironmentActor_ThrowsArgumentOutOfRangeException" methodname="Evaluate_EnvironmentActor_ThrowsArgumentOutOfRangeException" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="2010833944" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001148" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1178" name="Evaluate_FullBoardWithAvailableSpecialAction_ReturnsAvailable" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_FullBoardWithAvailableSpecialAction_ReturnsAvailable" methodname="Evaluate_FullBoardWithAvailableSpecialAction_ReturnsAvailable" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="42926995" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001374" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1177" name="Evaluate_FullBoardWithoutSpecialAction_ReturnsUnavailable" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_FullBoardWithoutSpecialAction_ReturnsUnavailable" methodname="Evaluate_FullBoardWithoutSpecialAction_ReturnsUnavailable" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="440703252" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.000869" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1179" name="Evaluate_FullBoardWithUnavailableProvider_ReturnsUnavailable" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_FullBoardWithUnavailableProvider_ReturnsUnavailable" methodname="Evaluate_FullBoardWithUnavailableProvider_ReturnsUnavailable" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="340553227" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.000659" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1185" name="Evaluate_IrregularBoard_ReturnsOnlyExistingCoordinates" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_IrregularBoard_ReturnsOnlyExistingCoordinates" methodname="Evaluate_IrregularBoard_ReturnsOnlyExistingCoordinates" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="471516259" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001146" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1180" name="Evaluate_MultipleProviders_CountsOnlyAvailableProviders" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_MultipleProviders_CountsOnlyAvailableProviders" methodname="Evaluate_MultipleProviders_CountsOnlyAvailableProviders" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="230295091" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002302" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1171" name="Evaluate_NoneActor_ThrowsArgumentOutOfRangeException" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_NoneActor_ThrowsArgumentOutOfRangeException" methodname="Evaluate_NoneActor_ThrowsArgumentOutOfRangeException" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="1159785619" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.000980" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1181" name="Evaluate_NormalMoveExists_StillConsultsSpecialProviders" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_NormalMoveExists_StillConsultsSpecialProviders" methodname="Evaluate_NormalMoveExists_StillConsultsSpecialProviders" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="1573783437" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001080" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1170" name="Evaluate_NullBoard_ThrowsArgumentNullException" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_NullBoard_ThrowsArgumentNullException" methodname="Evaluate_NullBoard_ThrowsArgumentNullException" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="871213124" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001423" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1184" name="Evaluate_ProviderChangesBoard_ThrowsInvalidOperationException" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_ProviderChangesBoard_ThrowsInvalidOperationException" methodname="Evaluate_ProviderChangesBoard_ThrowsInvalidOperationException" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="1695204906" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002414" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1183" name="Evaluate_ProviderReceivesExpectedContext" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_ProviderReceivesExpectedContext" methodname="Evaluate_ProviderReceivesExpectedContext" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="1563762738" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.007865" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1182" name="Evaluate_UsesPlayerXAndEnemyOForNormalMoves" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Evaluate_UsesPlayerXAndEnemyOForNormalMoves" methodname="Evaluate_UsesPlayerXAndEnemyOForNormalMoves" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="471364372" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001909" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1187" name="HasAvailableActions_ReturnsSameReducedAnswerAsReport" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.HasAvailableActions_ReturnsSameReducedAnswerAsReport" methodname="HasAvailableActions_ReturnsSameReducedAnswerAsReport" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="1091167402" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001746" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1188" name="Report_CopiesLegalNormalMoveCollection" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Report_CopiesLegalNormalMoveCollection" methodname="Report_CopiesLegalNormalMoveCollection" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="2117772263" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001034" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1189" name="Report_DuplicateNormalCoordinate_ThrowsArgumentException" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests.Report_DuplicateNormalCoordinate_ThrowsArgumentException" methodname="Report_DuplicateNormalCoordinate_ThrowsArgumentException" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionAvailabilityServiceTests" runstate="Runnable" seed="1655921463" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001695" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1190" name="ActionExecutorTests" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:41Z" duration="0.099425" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1191" name="Constructor_WithNullMoveService_Throws" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Constructor_WithNullMoveService_Throws" methodname="Constructor_WithNullMoveService_Throws" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="1152689352" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002577" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1204" name="Execute_OnOccupiedNormalCell_ConvertsMoveServiceRejection" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_OnOccupiedNormalCell_ConvertsMoveServiceRejection" methodname="Execute_OnOccupiedNormalCell_ConvertsMoveServiceRejection" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="2065195866" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.008490" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1198" name="Execute_WhenActorDoesNotOwnTurn_Rejects" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WhenActorDoesNotOwnTurn_Rejects" methodname="Execute_WhenActorDoesNotOwnTurn_Rejects" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="1566486820" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.002615" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1203" name="Execute_WhenCellDoesNotExist_ConvertsMoveServiceRejection" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WhenCellDoesNotExist_ConvertsMoveServiceRejection" methodname="Execute_WhenCellDoesNotExist_ConvertsMoveServiceRejection" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="1422833255" result="Passed" start-time="2026-08-13 15:01:40Z" end-time="2026-08-13 15:01:40Z" duration="0.001579" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1194" name="Execute_WhenEncounterDoesNotAcceptActions_RejectsWithoutChangingState" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WhenEncounterDoesNotAcceptActions_RejectsWithoutChangingState" methodname="Execute_WhenEncounterDoesNotAcceptActions_RejectsWithoutChangingState" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="1101825575" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001239" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1202" name="Execute_WhenMarkDoesNotBelongToActor_Rejects" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WhenMarkDoesNotBelongToActor_Rejects" methodname="Execute_WhenMarkDoesNotBelongToActor_Rejects" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="1656260783" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001139" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1205" name="Execute_WhenSameMarkAlreadyExists_ConvertsMoveServiceRejection" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WhenSameMarkAlreadyExists_ConvertsMoveServiceRejection" methodname="Execute_WhenSameMarkAlreadyExists_ConvertsMoveServiceRejection" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="729939644" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001157" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1200" name="Execute_WhenTurnAndBoardVersionsAreOutOfSync_Throws" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WhenTurnAndBoardVersionsAreOutOfSync_Throws" methodname="Execute_WhenTurnAndBoardVersionsAreOutOfSync_Throws" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="1648736960" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.002257" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1196" name="Execute_WithClosedTurn_RejectsWithoutConsumingAgain" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WithClosedTurn_RejectsWithoutConsumingAgain" methodname="Execute_WithClosedTurn_RejectsWithoutConsumingAgain" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="1593873923" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001245" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1197" name="Execute_WithDifferentTurnId_RejectsOldIntention" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WithDifferentTurnId_RejectsOldIntention" methodname="Execute_WithDifferentTurnId_RejectsOldIntention" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="1228793762" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000600" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1192" name="Execute_WithNullAction_Throws" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WithNullAction_Throws" methodname="Execute_WithNullAction_Throws" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="225128514" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001078" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1193" name="Execute_WithNullBoard_Throws" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WithNullBoard_Throws" methodname="Execute_WithNullBoard_Throws" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="520251286" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001184" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1199" name="Execute_WithOldExpectedBoardVersion_RejectsDelayedIntention" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WithOldExpectedBoardVersion_RejectsDelayedIntention" methodname="Execute_WithOldExpectedBoardVersion_RejectsDelayedIntention" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="619412076" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001324" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1195" name="Execute_WithoutOpenTurn_RejectsWithoutChangingBoard" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WithoutOpenTurn_RejectsWithoutChangingBoard" methodname="Execute_WithoutOpenTurn_RejectsWithoutChangingBoard" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="1109916995" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001345" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1201" name="Execute_WithUnsupportedConcreteAction_Rejects" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.Execute_WithUnsupportedConcreteAction_Rejects" methodname="Execute_WithUnsupportedConcreteAction_Rejects" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="526632037" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001085" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1207" name="ExecutePlaceMark_FromEnemyPolicy_UsesSameExecutorAndAppliesO" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.ExecutePlaceMark_FromEnemyPolicy_UsesSameExecutorAndAppliesO" methodname="ExecutePlaceMark_FromEnemyPolicy_UsesSameExecutorAndAppliesO" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="1496317519" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.002661" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1209" name="ExecutePlaceMark_OnGoldenCell_AppliesAuthorizedOverlap" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.ExecutePlaceMark_OnGoldenCell_AppliesAuthorizedOverlap" methodname="ExecutePlaceMark_OnGoldenCell_AppliesAuthorizedOverlap" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="2012469764" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001244" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1206" name="ExecutePlaceMark_WhenValid_MatchesMoveServiceAndCompletesTurn" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.ExecutePlaceMark_WhenValid_MatchesMoveServiceAndCompletesTurn" methodname="ExecutePlaceMark_WhenValid_MatchesMoveServiceAndCompletesTurn" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="579020166" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001674" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1208" name="ExecutePlaceMark_WithBudgetTwo_ConsumesOneActionAtATime" fullname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests.ExecutePlaceMark_WithBudgetTwo_ConsumesOneActionAtATime" methodname="ExecutePlaceMark_WithBudgetTwo_ConsumesOneActionAtATime" classname="TicTacToeRoguelike.EditModeTests.Actions.ActionExecutorTests" runstate="Runnable" seed="2126132583" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001519" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestSuite" id="1233" name="AI" fullname="TicTacToeRoguelike.EditModeTests.AI" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.025022" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1210" name="AgentDecisionContextTests" fullname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests" classname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.024029" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1212" name="Constructor_CopiesLegalActionCollection" fullname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests.Constructor_CopiesLegalActionCollection" methodname="Constructor_CopiesLegalActionCollection" classname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests" runstate="Runnable" seed="881448662" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.004157" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1211" name="Constructor_CreatesIndependentBoardAndTurnSnapshots" fullname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests.Constructor_CreatesIndependentBoardAndTurnSnapshots" methodname="Constructor_CreatesIndependentBoardAndTurnSnapshots" classname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests" runstate="Runnable" seed="1583168745" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001597" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1213" name="Constructor_DerivesActorMarksAndReactionFacts" fullname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests.Constructor_DerivesActorMarksAndReactionFacts" methodname="Constructor_DerivesActorMarksAndReactionFacts" classname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests" runstate="Runnable" seed="76602129" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001310" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1215" name="Constructor_WhenLegalActionBelongsToOtherTurn_Throws" fullname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests.Constructor_WhenLegalActionBelongsToOtherTurn_Throws" methodname="Constructor_WhenLegalActionBelongsToOtherTurn_Throws" classname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests" runstate="Runnable" seed="992519115" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001786" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1216" name="Constructor_WhenLegalActionHasOldBoardVersion_Throws" fullname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests.Constructor_WhenLegalActionHasOldBoardVersion_Throws" methodname="Constructor_WhenLegalActionHasOldBoardVersion_Throws" classname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests" runstate="Runnable" seed="1838935978" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001794" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1214" name="Constructor_WithPartiallyConsumedTurn_PreservesSnapshot" fullname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests.Constructor_WithPartiallyConsumedTurn_PreservesSnapshot" methodname="Constructor_WithPartiallyConsumedTurn_PreservesSnapshot" classname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests" runstate="Runnable" seed="1622525293" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000869" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1218" name="ContainsLegalAction_UsesReceivedInstance" fullname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests.ContainsLegalAction_UsesReceivedInstance" methodname="ContainsLegalAction_UsesReceivedInstance" classname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests" runstate="Runnable" seed="1718583219" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001388" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1217" name="CreateForNormalActions_MaterializesAgentPlaceMarkActions" fullname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests.CreateForNormalActions_MaterializesAgentPlaceMarkActions" methodname="CreateForNormalActions_MaterializesAgentPlaceMarkActions" classname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests" runstate="Runnable" seed="568735289" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.003491" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1220" name="IAgentPolicy_ReturnsActionFromCommonContract" fullname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests.IAgentPolicy_ReturnsActionFromCommonContract" methodname="IAgentPolicy_ReturnsActionFromCommonContract" classname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests" runstate="Runnable" seed="1912016225" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001210" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1219" name="MatchesCurrentState_DetectsGenerationAndBoardChanges" fullname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests.MatchesCurrentState_DetectsGenerationAndBoardChanges" methodname="MatchesCurrentState_DetectsGenerationAndBoardChanges" classname="TicTacToeRoguelike.EditModeTests.AI.AgentDecisionContextTests" runstate="Runnable" seed="1771562700" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001720" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestSuite" id="1231" name="Encounters" fullname="TicTacToeRoguelike.EditModeTests.Encounters" runstate="Runnable" testcasecount="32" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.086555" total="32" passed="32" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1135" name="EncounterEngineTests" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.058534" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1147" name="ConsecutiveLeaderTurns_MaintainReactionUntilResponderActs" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests.ConsecutiveLeaderTurns_MaintainReactionUntilResponderActs" methodname="ConsecutiveLeaderTurns_MaintainReactionUntilResponderActs" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" seed="496407878" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.010494" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1144" name="ExecuteAction_WhenBoardFillsWithoutSequence_EndsAsDraw" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests.ExecuteAction_WhenBoardFillsWithoutSequence_EndsAsDraw" methodname="ExecuteAction_WhenBoardFillsWithoutSequence_EndsAsDraw" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" seed="412151231" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.018417" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1143" name="ExecuteAction_WhenDamageDefeatsCombatant_EndsAfterAcknowledge" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests.ExecuteAction_WhenDamageDefeatsCombatant_EndsAfterAcknowledge" methodname="ExecuteAction_WhenDamageDefeatsCombatant_EndsAfterAcknowledge" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" seed="273948757" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.011948" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1139" name="ExecuteAction_WhenFirstSequenceAppears_StartsReaction" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests.ExecuteAction_WhenFirstSequenceAppears_StartsReaction" methodname="ExecuteAction_WhenFirstSequenceAppears_StartsReaction" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" seed="853210755" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001029" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1137" name="ExecuteAction_WhenRejected_DoesNotConsumeOrAdvanceTurn" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests.ExecuteAction_WhenRejected_DoesNotConsumeOrAdvanceTurn" methodname="ExecuteAction_WhenRejected_DoesNotConsumeOrAdvanceTurn" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" seed="597209566" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001106" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1142" name="ExecuteAction_WhenResponderRemainsBehind_ResolvesDamageOnce" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests.ExecuteAction_WhenResponderRemainsBehind_ResolvesDamageOnce" methodname="ExecuteAction_WhenResponderRemainsBehind_ResolvesDamageOnce" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" seed="76235862" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.004616" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1141" name="ExecuteAction_WhenResponderTakesLead_TransfersReaction" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests.ExecuteAction_WhenResponderTakesLead_TransfersReaction" methodname="ExecuteAction_WhenResponderTakesLead_TransfersReaction" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" seed="1933622880" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001029" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1140" name="ExecuteAction_WhenResponderTies_ResolvesReactionAndContinues" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests.ExecuteAction_WhenResponderTies_ResolvesReactionAndContinues" methodname="ExecuteAction_WhenResponderTies_ResolvesReactionAndContinues" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" seed="237753767" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001054" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1145" name="ExecuteAction_WhenSpecialActionExists_FullBoardContinues" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests.ExecuteAction_WhenSpecialActionExists_FullBoardContinues" methodname="ExecuteAction_WhenSpecialActionExists_FullBoardContinues" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" seed="1854718033" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000853" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1138" name="ExecuteAction_WithBudgetTwo_EvaluatesOnlyAfterSecondAction" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests.ExecuteAction_WithBudgetTwo_EvaluatesOnlyAfterSecondAction" methodname="ExecuteAction_WithBudgetTwo_EvaluatesOnlyAfterSecondAction" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" seed="1893070481" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001378" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1146" name="SkipCurrentTurn_DoesNotEvaluateReaction" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests.SkipCurrentTurn_DoesNotEvaluateReaction" methodname="SkipCurrentTurn_DoesNotEvaluateReaction" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" seed="659548768" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000995" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1136" name="StartEncounter_OpensFirstTurnAndInitializesState" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests.StartEncounter_OpensFirstTurnAndInitializesState" methodname="StartEncounter_OpensFirstTurnAndInitializesState" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterEngineTests" runstate="Runnable" seed="441705966" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000617" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1148" name="EncounterFlowTypesTests" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.025751" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1167" name="EncounterResult_BothCombatantsAlive_ThrowsArgumentException" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.EncounterResult_BothCombatantsAlive_ThrowsArgumentException" methodname="EncounterResult_BothCombatantsAlive_ThrowsArgumentException" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="1439094138" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.002854" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1166" name="EncounterResult_DefeatedEnemy_DerivesPlayerVictory" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.EncounterResult_DefeatedEnemy_DerivesPlayerVictory" methodname="EncounterResult_DefeatedEnemy_DerivesPlayerVictory" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="43080283" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000842" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1168" name="EncounterResult_NullResolution_ThrowsArgumentNullException" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.EncounterResult_NullResolution_ThrowsArgumentNullException" methodname="EncounterResult_NullResolution_ThrowsArgumentNullException" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="911193575" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000778" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1155" name="EncounterRules_InvalidSequenceLengths_ThrowArgumentOutOfRangeException" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.EncounterRules_InvalidSequenceLengths_ThrowArgumentOutOfRangeException" methodname="EncounterRules_InvalidSequenceLengths_ThrowArgumentOutOfRangeException" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="819355948" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001620" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1156" name="EncounterRules_NegativeVictoryMultiplier_ThrowsArgumentOutOfRangeException" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.EncounterRules_NegativeVictoryMultiplier_ThrowsArgumentOutOfRangeException" methodname="EncounterRules_NegativeVictoryMultiplier_ThrowsArgumentOutOfRangeException" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="1171455648" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001020" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1154" name="EncounterRules_ValidValues_ArePreserved" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.EncounterRules_ValidValues_ArePreserved" methodname="EncounterRules_ValidValues_ArePreserved" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="705190724" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001919" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1150" name="EncounterSideRules_Enemy_MapsToEnemyAndO" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.EncounterSideRules_Enemy_MapsToEnemyAndO" methodname="EncounterSideRules_Enemy_MapsToEnemyAndO" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="1148858042" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000498" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1151" name="EncounterSideRules_FromActor_RestoresBothSides" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.EncounterSideRules_FromActor_RestoresBothSides" methodname="EncounterSideRules_FromActor_RestoresBothSides" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="799183952" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000455" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1152" name="EncounterSideRules_GetOpposite_SwitchesBothSides" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.EncounterSideRules_GetOpposite_SwitchesBothSides" methodname="EncounterSideRules_GetOpposite_SwitchesBothSides" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="236943192" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000303" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1153" name="EncounterSideRules_InvalidValues_ThrowArgumentOutOfRangeException" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.EncounterSideRules_InvalidValues_ThrowArgumentOutOfRangeException" methodname="EncounterSideRules_InvalidValues_ThrowArgumentOutOfRangeException" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="1199473362" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000547" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1149" name="EncounterSideRules_Player_MapsToPlayerAndX" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.EncounterSideRules_Player_MapsToPlayerAndX" methodname="EncounterSideRules_Player_MapsToPlayerAndX" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="764216215" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000214" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1163" name="RoundResolution_DamageDefeatsEnemy_ReportsEncounterEnd" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.RoundResolution_DamageDefeatsEnemy_ReportsEncounterEnd" methodname="RoundResolution_DamageDefeatsEnemy_ReportsEncounterEnd" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="2136865008" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000495" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1162" name="RoundResolution_ResolvedPipeline_PreservesAuthoritativeReports" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.RoundResolution_ResolvedPipeline_PreservesAuthoritativeReports" methodname="RoundResolution_ResolvedPipeline_PreservesAuthoritativeReports" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="1796337709" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000512" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1164" name="RoundResolution_SwappedScores_ThrowsArgumentException" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.RoundResolution_SwappedScores_ThrowsArgumentException" methodname="RoundResolution_SwappedScores_ThrowsArgumentException" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="1158630742" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000531" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1165" name="RoundResolution_SwappedSnapshotOwners_ThrowsArgumentException" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.RoundResolution_SwappedSnapshotOwners_ThrowsArgumentException" methodname="RoundResolution_SwappedSnapshotOwners_ThrowsArgumentException" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="1153652449" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000854" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1159" name="RoundResult_ContinuingDecision_ThrowsArgumentException" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.RoundResult_ContinuingDecision_ThrowsArgumentException" methodname="RoundResult_ContinuingDecision_ThrowsArgumentException" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="1882088138" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000873" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1160" name="RoundResult_DifferentBoardVersion_ThrowsArgumentException" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.RoundResult_DifferentBoardVersion_ThrowsArgumentException" methodname="RoundResult_DifferentBoardVersion_ThrowsArgumentException" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="1577318338" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000771" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1158" name="RoundResult_Draw_DoesNotGrantVictoryMultiplier" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.RoundResult_Draw_DoesNotGrantVictoryMultiplier" methodname="RoundResult_Draw_DoesNotGrantVictoryMultiplier" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="871629712" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000643" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1161" name="RoundResult_InvalidArguments_ThrowExpectedExceptions" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.RoundResult_InvalidArguments_ThrowExpectedExceptions" methodname="RoundResult_InvalidArguments_ThrowExpectedExceptions" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="1750924827" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000720" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1157" name="RoundResult_PlayerVictory_DerivesReactionFacts" fullname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests.RoundResult_PlayerVictory_DerivesReactionFacts" methodname="RoundResult_PlayerVictory_DerivesReactionFacts" classname="TicTacToeRoguelike.EditModeTests.Encounters.EncounterFlowTypesTests" runstate="Runnable" seed="254478482" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001814" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestSuite" id="1230" name="Reactions" fullname="TicTacToeRoguelike.EditModeTests.Reactions" runstate="Runnable" testcasecount="34" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.040648" total="34" passed="34" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1096" name="ReactionRuleTests" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.019106" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1114" name="Evaluate_AcceptsSameBoardVersion" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Evaluate_AcceptsSameBoardVersion" methodname="Evaluate_AcceptsSameBoardVersion" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="168357212" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001691" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1120" name="Evaluate_RejectsActorThatCannotCompleteTurn" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Evaluate_RejectsActorThatCannotCompleteTurn" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.003382" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1118" name="Evaluate_RejectsActorThatCannotCompleteTurn(None)" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Evaluate_RejectsActorThatCannotCompleteTurn(None)" methodname="Evaluate_RejectsActorThatCannotCompleteTurn" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="345467565" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000973" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1119" name="Evaluate_RejectsActorThatCannotCompleteTurn(Environment)" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Evaluate_RejectsActorThatCannotCompleteTurn(Environment)" methodname="Evaluate_RejectsActorThatCannotCompleteTurn" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="2073833779" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000915" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1117" name="Evaluate_RejectsNullCurrentState" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Evaluate_RejectsNullCurrentState" methodname="Evaluate_RejectsNullCurrentState" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="78437236" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000601" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1116" name="Evaluate_RejectsNullPreviousState" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Evaluate_RejectsNullPreviousState" methodname="Evaluate_RejectsNullPreviousState" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="2014230785" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000416" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1115" name="Evaluate_RejectsOlderCurrentBoardVersion" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Evaluate_RejectsOlderCurrentBoardVersion" methodname="Evaluate_RejectsOlderCurrentBoardVersion" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="1265862302" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001365" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1113" name="Evaluate_ReturnsExpectedDecision" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.008521" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1097" name="Tied_zero_to_zero_continues_normally" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Tied_zero_to_zero_continues_normally" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="733474039" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.002300" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1098" name="Player_lead_starts_reaction_for_Enemy" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Player_lead_starts_reaction_for_Enemy" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="2135557903" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000352" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1099" name="Enemy_lead_starts_reaction_for_Player" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Enemy_lead_starts_reaction_for_Player" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="1568939770" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000535" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1100" name="Enemy_ties_and_resolves_reaction" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Enemy_ties_and_resolves_reaction" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="58144455" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000241" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1101" name="Player_ties_and_resolves_reaction" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Player_ties_and_resolves_reaction" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="1626801978" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000176" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1102" name="Enemy_takes_lead_and_transfers_reaction" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Enemy_takes_lead_and_transfers_reaction" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="1293627800" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000140" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1103" name="Player_takes_lead_and_transfers_reaction" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Player_takes_lead_and_transfers_reaction" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="1030292795" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000221" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1104" name="Extra_turn_of_Player_maintains_reaction" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Extra_turn_of_Player_maintains_reaction" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="1191844980" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000232" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1105" name="Extra_turn_of_Enemy_maintains_reaction" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Extra_turn_of_Enemy_maintains_reaction" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="888720107" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000270" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1106" name="Enemy_responder_remains_behind_and_loses" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Enemy_responder_remains_behind_and_loses" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="1819583772" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000221" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1107" name="Player_responder_remains_behind_and_loses" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.Player_responder_remains_behind_and_loses" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="1679112352" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000220" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1108" name="No_actions_with_tie_ends_in_draw" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.No_actions_with_tie_ends_in_draw" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="1082045386" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000132" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1109" name="No_actions_with_Player_leading_gives_Player_victory" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.No_actions_with_Player_leading_gives_Player_victory" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="1207033601" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000114" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1110" name="No_actions_with_Enemy_leading_gives_Enemy_victory" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.No_actions_with_Enemy_leading_gives_Enemy_victory" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="2118110184" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000108" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1111" name="No_actions_has_priority_over_reaction_transfer" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.No_actions_has_priority_over_reaction_transfer" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="1340237836" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000109" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1112" name="No_actions_has_priority_over_responder_failure" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests.No_actions_has_priority_over_responder_failure" methodname="Evaluate_ReturnsExpectedDecision" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionRuleTests" runstate="Runnable" seed="1743994268" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000130" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestFixture" id="1121" name="ReactionStateFactoryTests" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.019825" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1134" name="Constructor_WithNullSequenceEvaluator_Throws" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Constructor_WithNullSequenceEvaluator_Throws" methodname="Constructor_WithNullSequenceEvaluator_Throws" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" seed="1141740442" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000738" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1125" name="Create_AfterSimulatedCleaningAndOverwrite_RecountsBothSides" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Create_AfterSimulatedCleaningAndOverwrite_RecountsBothSides" methodname="Create_AfterSimulatedCleaningAndOverwrite_RecountsBothSides" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" seed="1254197000" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000830" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1124" name="Create_CellWithBothMarksCountsForBothParticipants" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Create_CellWithBothMarksCountsForBothParticipants" methodname="Create_CellWithBothMarksCountsForBothParticipants" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" seed="1801697128" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001555" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1122" name="Create_CountsWinningSequencesForBothParticipants" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Create_CountsWinningSequencesForBothParticipants" methodname="Create_CountsWinningSequencesForBothParticipants" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" seed="366159794" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.002233" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1123" name="Create_UsesParticipantMarkMappingProvidedByCaller" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Create_UsesParticipantMarkMappingProvidedByCaller" methodname="Create_UsesParticipantMarkMappingProvidedByCaller" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" seed="1796430631" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001104" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1131" name="Create_WithInvalidParticipantMark_Throws" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Create_WithInvalidParticipantMark_Throws" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.006251" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1127" name="Create_WithInvalidParticipantMark_Throws(None,O)" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Create_WithInvalidParticipantMark_Throws(None,O)" methodname="Create_WithInvalidParticipantMark_Throws" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" seed="2036466748" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001914" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1128" name="Create_WithInvalidParticipantMark_Throws(X, O,O)" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Create_WithInvalidParticipantMark_Throws(X, O,O)" methodname="Create_WithInvalidParticipantMark_Throws" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" seed="1050881370" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000723" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1129" name="Create_WithInvalidParticipantMark_Throws(X,None)" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Create_WithInvalidParticipantMark_Throws(X,None)" methodname="Create_WithInvalidParticipantMark_Throws" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" seed="658552272" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000774" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1130" name="Create_WithInvalidParticipantMark_Throws(X,X, O)" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Create_WithInvalidParticipantMark_Throws(X,X, O)" methodname="Create_WithInvalidParticipantMark_Throws" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" seed="696757306" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000695" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1126" name="Create_WithNullBoard_Throws" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Create_WithNullBoard_Throws" methodname="Create_WithNullBoard_Throws" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" seed="2128366729" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001242" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1133" name="Create_WithRequiredLengthBelowTwo_Throws" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Create_WithRequiredLengthBelowTwo_Throws" methodname="Create_WithRequiredLengthBelowTwo_Throws" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" seed="328263196" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001179" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1132" name="Create_WithSameMarkForBothParticipants_Throws" fullname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests.Create_WithSameMarkForBothParticipants_Throws" methodname="Create_WithSameMarkForBothParticipants_Throws" classname="TicTacToeRoguelike.EditModeTests.Reactions.ReactionStateFactoryTests" runstate="Runnable" seed="55003640" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001286" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestSuite" id="1229" name="Turns" fullname="TicTacToeRoguelike.EditModeTests.Turns" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.038361" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1069" name="TurnContextTests" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.037625" total="22" passed="22" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1078" name="Cancel_BeforeAnyAction_CreatesNonReactiveCompletion" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Cancel_BeforeAnyAction_CreatesNonReactiveCompletion" methodname="Cancel_BeforeAnyAction_CreatesNonReactiveCompletion" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="1168904846" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001370" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1085" name="ConsecutiveTurns_HaveDistinctIdentities" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.ConsecutiveTurns_HaveDistinctIdentities" methodname="ConsecutiveTurns_HaveDistinctIdentities" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="1647289045" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000763" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1088" name="Constructor_WithActorThatCannotPlay_Throws" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Constructor_WithActorThatCannotPlay_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.002288" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1086" name="Constructor_WithActorThatCannotPlay_Throws(None)" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Constructor_WithActorThatCannotPlay_Throws(None)" methodname="Constructor_WithActorThatCannotPlay_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="399241628" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000764" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1087" name="Constructor_WithActorThatCannotPlay_Throws(Environment)" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Constructor_WithActorThatCannotPlay_Throws(Environment)" methodname="Constructor_WithActorThatCannotPlay_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="639332896" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000430" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1070" name="Constructor_WithDefaultBudget_StartsOpen" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Constructor_WithDefaultBudget_StartsOpen" methodname="Constructor_WithDefaultBudget_StartsOpen" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="1007616395" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.002301" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1092" name="Constructor_WithNegativeBoardVersion_Throws" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Constructor_WithNegativeBoardVersion_Throws" methodname="Constructor_WithNegativeBoardVersion_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="1966275984" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.002282" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1095" name="Constructor_WithNonPositiveActionBudget_Throws" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Constructor_WithNonPositiveActionBudget_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.003355" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1093" name="Constructor_WithNonPositiveActionBudget_Throws(0)" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Constructor_WithNonPositiveActionBudget_Throws(0)" methodname="Constructor_WithNonPositiveActionBudget_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="459451261" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001895" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1094" name="Constructor_WithNonPositiveActionBudget_Throws(-1)" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Constructor_WithNonPositiveActionBudget_Throws(-1)" methodname="Constructor_WithNonPositiveActionBudget_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="538312317" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000273" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1091" name="Constructor_WithNonPositiveTurnId_Throws" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Constructor_WithNonPositiveTurnId_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.002914" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1089" name="Constructor_WithNonPositiveTurnId_Throws(0L)" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Constructor_WithNonPositiveTurnId_Throws(0L)" methodname="Constructor_WithNonPositiveTurnId_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="1971391902" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001617" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1090" name="Constructor_WithNonPositiveTurnId_Throws(-1L)" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Constructor_WithNonPositiveTurnId_Throws(-1L)" methodname="Constructor_WithNonPositiveTurnId_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="1945875636" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000301" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1082" name="CreateFrom_CompletedTurn_CopiesFinalSnapshot" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.CreateFrom_CompletedTurn_CopiesFinalSnapshot" methodname="CreateFrom_CompletedTurn_CopiesFinalSnapshot" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="1039867087" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001428" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1084" name="CreateFrom_NullTurn_Throws" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.CreateFrom_NullTurn_Throws" methodname="CreateFrom_NullTurn_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="220900496" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001989" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1083" name="CreateFrom_OpenTurn_Throws" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.CreateFrom_OpenTurn_Throws" methodname="CreateFrom_OpenTurn_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="1693664474" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000879" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1076" name="RegisterAppliedAction_AfterCompletion_Throws" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.RegisterAppliedAction_AfterCompletion_Throws" methodname="RegisterAppliedAction_AfterCompletion_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="2109034215" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001066" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1071" name="RegisterAppliedAction_WithBudgetOne_CompletesTurn" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.RegisterAppliedAction_WithBudgetOne_CompletesTurn" methodname="RegisterAppliedAction_WithBudgetOne_CompletesTurn" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="2044855490" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001032" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1072" name="RegisterAppliedAction_WithBudgetTwo_OnlySecondActionCompletesTurn" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.RegisterAppliedAction_WithBudgetTwo_OnlySecondActionCompletesTurn" methodname="RegisterAppliedAction_WithBudgetTwo_OnlySecondActionCompletesTurn" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="57724385" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001316" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1075" name="RegisterAppliedAction_WithOlderBoardVersion_ThrowsWithoutChangingTurn" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.RegisterAppliedAction_WithOlderBoardVersion_ThrowsWithoutChangingTurn" methodname="RegisterAppliedAction_WithOlderBoardVersion_ThrowsWithoutChangingTurn" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="1548994079" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001418" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1074" name="RegisterAppliedAction_WithUnchangedBoardVersion_IsAllowed" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.RegisterAppliedAction_WithUnchangedBoardVersion_IsAllowed" methodname="RegisterAppliedAction_WithUnchangedBoardVersion_IsAllowed" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="100960399" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000653" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1073" name="RejectedAction_DoesNotConsumeBudget" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.RejectedAction_DoesNotConsumeBudget" methodname="RejectedAction_DoesNotConsumeBudget" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="130503528" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000927" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1077" name="Skip_BeforeAnyAction_CreatesNonReactiveCompletion" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.Skip_BeforeAnyAction_CreatesNonReactiveCompletion" methodname="Skip_BeforeAnyAction_CreatesNonReactiveCompletion" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="1251524772" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001972" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1081" name="SkipOrCancel_AfterAppliedAction_Throws" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.SkipOrCancel_AfterAppliedAction_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.004927" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1079" name="SkipOrCancel_AfterAppliedAction_Throws(Skipped)" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.SkipOrCancel_AfterAppliedAction_Throws(Skipped)" methodname="SkipOrCancel_AfterAppliedAction_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="1458797918" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.001929" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1080" name="SkipOrCancel_AfterAppliedAction_Throws(Cancelled)" fullname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests.SkipOrCancel_AfterAppliedAction_Throws(Cancelled)" methodname="SkipOrCancel_AfterAppliedAction_Throws" classname="TicTacToeRoguelike.EditModeTests.Turns.TurnContextTests" runstate="Runnable" seed="216791415" result="Passed" start-time="2026-08-13 15:01:41Z" end-time="2026-08-13 15:01:41Z" duration="0.000597" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[Saving results to: C:/Users/fachi/AppData/LocalLow/DefaultCompany/Tic tac toe\TestResults.xml
+]]></output>
+                </test-case>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
